@@ -1,0 +1,122 @@
+input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.menuTFinal {
+	background-color: #fff;
+	padding: 15px 0;
+	margin: 0;
+}
+.logoEmpresa {
+	img	{
+		width: 50%;
+	}
+}
+.nav {
+	&.navbar-nav {
+		li.btnSignUp {
+			border-radius: 3px;
+			background-color: #0069ff;	
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+.header-tf {
+	background: #5a9eff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5a9eff 0%, #1575ff 44%, #016aff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #5a9eff 0%,#1575ff 44%,#016aff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #5a9eff 0%,#1575ff 44%,#016aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a9eff', endColorstr='#016aff',GradientType=0 ); /* IE6-9 */
+	.form-crearCuenta {
+		width: 330px;
+		margin: 60px 0;
+		h2 {
+			color: #fff;
+    		line-height: 37px;
+    		width: 470px;
+		}
+		input{
+			background-color: transparent;
+    		background-image: none;
+    		border: 1px solid #fff;
+    		border-radius: 3px;
+    		width: 436px;
+    		height: 50px;
+    		margin-bottom: 17px;
+		}
+		.btn-crear {
+			border-radius: 3px;
+    		width: 436px;
+    		height: 50px;
+    		background-color: #fff;
+    		color: #0069ff;
+		}
+	}
+	.img-header {
+		img {
+			width: 100%;
+    		margin: 60px 4px;
+    		border: 1px solid #0069ff;
+    		border-radius: 4px;
+		}
+	}
+}
+
+.container-features {
+	border-bottom: 1px solid #bdbcbc;
+	h2 {
+		font-size: 28px;
+		padding-top: 100px;
+		padding-bottom: 10px;
+		text-align: center;
+	}	
+	p {
+		font-size: 12px;
+		color: #666;
+		text-align: left;
+	}
+	h3 {
+		text-align: left;
+	}
+		.item-features {
+			margin: 40px 0;
+			p {
+				font-size: 12px;
+				color: #666;
+			}
+			.img-feature {
+					height: 160px;
+			}
+		}
+}
+
+.container-precios {
+	border-bottom: 1px solid #bdbcbc;
+	display: flex;
+    flex-flow: row wrap;
+	h2 {
+		font-size: 28px;
+		padding-top: 100px;
+		padding-bottom: 10px;
+		text-align: center;
+		width: 100%;
+	}
+	.item-precios {
+		width: 20%;
+		border: 1px solid #0069ff;
+		padding: 10px;
+		h3 {
+			text-align: center;
+		}
+		li {
+			list-style: none;
+		}
+		&.item-destacado {
+			
+		}
+	}
+}
+
+
