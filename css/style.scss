@@ -1,3 +1,21 @@
+@mixin btn-cta($bg-color, $font-color, $width) {  /*esta sintaxis es una funcion*/
+	text-align: center;
+	font-size: 15px;
+	padding: 15px 60px;
+	border-radius: 3px;
+	text-decoration: none;
+	width: $width;
+	background-color: $bg-color;
+	color: $font-color;
+}
+.titulo-seccion {
+	font-size: 28px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	text-align: center;
+	width: 100%;
+}
+
 input::-webkit-input-placeholder {
   color: #fff !important;
 }
@@ -64,14 +82,9 @@ input::-webkit-input-placeholder {
 	}
 }
 
-.container-features {
-	border-bottom: 1px solid #bdbcbc;
-	h2 {
-		font-size: 28px;
-		padding-top: 100px;
-		padding-bottom: 10px;
-		text-align: center;
-	}	
+.section-features {
+	border-bottom: 1px solid #e0e0e0;
+	@extend .titulo-seccion;	
 	p {
 		font-size: 12px;
 		color: #666;
@@ -92,17 +105,11 @@ input::-webkit-input-placeholder {
 		}
 }
 
-.container-precios {
-	border-bottom: 1px solid #bdbcbc;
+.container-prices {
+	border-bottom: 1px solid #e0e0e0;
 	display: flex;
     flex-flow: row wrap;
-	h2 {
-		font-size: 28px;
-		padding-top: 100px;
-		padding-bottom: 10px;
-		text-align: center;
-		width: 100%;
-	}
+	@extend .titulo-seccion;
 	.item-precios {
 		width: 20%;
 		border: 1px solid #0069ff;
@@ -113,10 +120,81 @@ input::-webkit-input-placeholder {
 		li {
 			list-style: none;
 		}
-		&.item-destacado {
-			
+	}
+	.btn-principal {
+		display: block;
+		margin: 40px auto;
+		a {
+			@include btn-cta(#0069ff, #fff, 260px);
 		}
 	}
 }
+.container-mapa {
+	border-bottom: 1px solid #e0e0e0;
+	display: flex;
+    flex-flow: row wrap;
+	@extend .titulo-seccion;
+	.img-mapa {
+		display: block;
+		img {
+			width: 100%;
+		}	
+	}
+	.btn-principal {
+		display: block;
+		margin: 40px auto;
+		a {
+			@include btn-cta(#0069ff, #fff, 260px);
+		}
+	}
+}
+
+.container-customer {
+	border-bottom: 1px solid #e0e0e0;
+	display: flex;
+    flex-flow: row wrap;
+	@extend .titulo-seccion;
+	.img-customer {
+		display: block;
+		img {
+			width: 100%;
+		}	
+	}
+	.btn-principal {
+		display: block;
+		margin: 40px auto;
+		a {
+			@include btn-cta(#0069ff, #fff, 260px);
+		}
+	}
+}
+
+.container-contact {
+	width: 100%;
+	background-image: url("../img/bg-contact.png");
+	border-bottom: 1px solid #e0e0e0;
+	height: 355px;
+	display: flex;
+    flex-flow: row wrap;
+    h2 {
+    	color: #fff;
+    	text-align: center;
+    }
+	.img-contact {
+		
+		display: block;
+		img {
+			width: 100%;
+		}	
+	}
+	.btn-principal {
+		display: block;
+		margin: 40px auto;
+		a {
+			@include btn-cta(#fff, #0069ff, 260px);
+		}
+	}
+}
+
 
 

@@ -1,3 +1,10 @@
+.titulo-seccion, .section-features, .container-prices, .container-mapa, .container-customer {
+  font-size: 28px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%; }
+
 input::-webkit-input-placeholder {
   color: #fff !important; }
 
@@ -53,46 +60,132 @@ input::-webkit-input-placeholder {
     border: 1px solid #0069ff;
     border-radius: 4px; }
 
-.container-features {
-  border-bottom: 1px solid #bdbcbc; }
-  .container-features h2 {
-    font-size: 28px;
-    padding-top: 100px;
-    padding-bottom: 10px;
-    text-align: center; }
-  .container-features p {
+.section-features {
+  border-bottom: 1px solid #e0e0e0; }
+  .section-features p {
     font-size: 12px;
     color: #666;
     text-align: left; }
-  .container-features h3 {
+  .section-features h3 {
     text-align: left; }
-  .container-features .item-features {
+  .section-features .item-features {
     margin: 40px 0; }
-    .container-features .item-features p {
+    .section-features .item-features p {
       font-size: 12px;
       color: #666; }
-    .container-features .item-features .img-feature {
+    .section-features .item-features .img-feature {
       height: 160px; }
 
-.container-precios {
-  border-bottom: 1px solid #bdbcbc;
+.container-prices {
+  border-bottom: 1px solid #e0e0e0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap; }
-  .container-precios h2 {
-    font-size: 28px;
-    padding-top: 100px;
-    padding-bottom: 10px;
-    text-align: center;
-    width: 100%; }
-  .container-precios .item-precios {
+  .container-prices .item-precios {
     width: 20%;
     border: 1px solid #0069ff;
     padding: 10px; }
-    .container-precios .item-precios h3 {
+    .container-prices .item-precios h3 {
       text-align: center; }
-    .container-precios .item-precios li {
+    .container-prices .item-precios li {
       list-style: none; }
+  .container-prices .btn-principal {
+    display: block;
+    margin: 40px auto; }
+    .container-prices .btn-principal a {
+      /*esta sintaxis es una funcion*/
+      text-align: center;
+      font-size: 15px;
+      padding: 15px 60px;
+      border-radius: 3px;
+      text-decoration: none;
+      width: 260px;
+      background-color: #0069ff;
+      color: #fff; }
+
+.container-mapa {
+  border-bottom: 1px solid #e0e0e0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .container-mapa .img-mapa {
+    display: block; }
+    .container-mapa .img-mapa img {
+      width: 100%; }
+  .container-mapa .btn-principal {
+    display: block;
+    margin: 40px auto; }
+    .container-mapa .btn-principal a {
+      /*esta sintaxis es una funcion*/
+      text-align: center;
+      font-size: 15px;
+      padding: 15px 60px;
+      border-radius: 3px;
+      text-decoration: none;
+      width: 260px;
+      background-color: #0069ff;
+      color: #fff; }
+
+.container-customer {
+  border-bottom: 1px solid #e0e0e0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .container-customer .img-customer {
+    display: block; }
+    .container-customer .img-customer img {
+      width: 100%; }
+  .container-customer .btn-principal {
+    display: block;
+    margin: 40px auto; }
+    .container-customer .btn-principal a {
+      /*esta sintaxis es una funcion*/
+      text-align: center;
+      font-size: 15px;
+      padding: 15px 60px;
+      border-radius: 3px;
+      text-decoration: none;
+      width: 260px;
+      background-color: #0069ff;
+      color: #fff; }
+
+.container-contact {
+  width: 100%;
+  background-image: url("../img/bg-contact.png");
+  border-bottom: 1px solid #e0e0e0;
+  height: 355px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .container-contact h2 {
+    color: #fff;
+    text-align: center; }
+  .container-contact .img-contact {
+    display: block; }
+    .container-contact .img-contact img {
+      width: 100%; }
+  .container-contact .btn-principal {
+    display: block;
+    margin: 40px auto; }
+    .container-contact .btn-principal a {
+      /*esta sintaxis es una funcion*/
+      text-align: center;
+      font-size: 15px;
+      padding: 15px 60px;
+      border-radius: 3px;
+      text-decoration: none;
+      width: 260px;
+      background-color: #fff;
+      color: #0069ff; }
