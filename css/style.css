@@ -158,28 +158,57 @@ input::-webkit-input-placeholder {
       background-color: #0069ff;
       color: #fff; }
 
-.container-contact {
-  width: 100%;
+.section-contact {
   background-image: url("../img/bg-contact.png");
+  background-size: 100%;
   border-bottom: 1px solid #e0e0e0;
-  height: 355px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  .container-contact h2 {
-    color: #fff;
-    text-align: center; }
-  .container-contact .img-contact {
-    display: block; }
-    .container-contact .img-contact img {
+  height: 350px; }
+  .section-contact .container-contact {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    .section-contact .container-contact h2 {
+      color: #fff;
+      text-align: center;
       width: 100%; }
-  .container-contact .btn-principal {
+    .section-contact .container-contact .img-contact {
+      display: block; }
+      .section-contact .container-contact .img-contact img {
+        width: 100%; }
+    .section-contact .container-contact .btn-principal {
+      display: block;
+      margin: 40px auto; }
+      .section-contact .container-contact .btn-principal a {
+        /*esta sintaxis es una funcion*/
+        text-align: center;
+        font-size: 15px;
+        padding: 15px 60px;
+        border-radius: 3px;
+        text-decoration: none;
+        width: 260px;
+        background-color: #fff;
+        color: #0069ff; }
+
+.section-footer {
+  background-color: #2e3234;
+  padding: 30px 0; }
+  .section-footer .item-footer h3 {
+    color: #fff;
+    font-size: 18px; }
+  .section-footer .item-footer ul {
+    padding: 0;
+    list-style: none;
+    color: #fff; }
+  .section-footer .item-footer span {
+    color: #fff;
+    font-size: 24px; }
+  .section-footer .item-footer .btn-principal {
     display: block;
     margin: 40px auto; }
-    .container-contact .btn-principal a {
+    .section-footer .item-footer .btn-principal a {
       /*esta sintaxis es una funcion*/
       text-align: center;
       font-size: 15px;
@@ -187,5 +216,6 @@ input::-webkit-input-placeholder {
       border-radius: 3px;
       text-decoration: none;
       width: 260px;
-      background-color: #fff;
-      color: #0069ff; }
+      background-color: #0069ff;
+      color: #fff;
+      padding: 15px 15px; }
